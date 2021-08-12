@@ -42,8 +42,6 @@ PING raspberrypi.local (192.168.1.26): 56 data bytes
 
 ### 在电脑终端登录树莓派
 
-ssh pi@
-
 ssh pi@192.168.1.26
 
 pi@192.168.1.26's password: raspberry
