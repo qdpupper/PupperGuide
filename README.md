@@ -2,9 +2,15 @@
 
 ### 烧录树莓派操作系统
 
-设置SSH https://www.raspberrypi.org/documentation/remote-access/ssh/README.md
+下载烧录软件 Raspberry Pi Imager  https://www.raspberrypi.org/software/
+苹果电脑 https://downloads.raspberrypi.org/imager/imager_latest.dmg
+Windows https://downloads.raspberrypi.org/imager/imager_latest.exe
+Ubuntu（x86） https://downloads.raspberrypi.org/imager/imager_latest_amd64.deb
+选择 Raspberry Pi OS
 
-在树莓派SD卡的分区里放置一个名为ssh的文件，没有文件扩展名，文件无需任何内容
+## 设置SSH https://www.raspberrypi.org/documentation/remote-access/ssh/README.md
+
+在树莓派SD卡的根目录里放置一个名为ssh的文件，不要文件扩展名，文件无需任何内容
 
 ### 查看树莓派局域网IP地址 
 ## 方法一：用电脑登录网关查
