@@ -36,6 +36,10 @@ ssh pi@192.168.1.26
 
 pi@192.168.1.26's password: raspberry
 
+
+sudo apt-get update
+
+
 安装python pip/pip3
 
 https://packaging.python.org/guides/installing-using-linux-tools/#installing-pip-setuptools-wheel-with-linux-package-managers
@@ -46,7 +50,8 @@ sudo apt install python-pip
 
 Python 3:
 
-sudo apt install python3-venv python3-pip
+#sudo apt install python3-venv python3-pip
+sudo apt install python3-pip
 
 git:
 
@@ -54,7 +59,7 @@ sudo apt install git
 
 安装
 
-git clone https://github.com/StanfordPupper/StanfordQuadruped.git
+git clone https://github.com/qdpupper/StanfordQuadruped.git
 
 cd StanfordQuadruped sudo bash install.sh
 
