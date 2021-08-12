@@ -61,11 +61,14 @@ sudo apt install git
 
 git clone https://github.com/qdpupper/StanfordQuadruped.git
 
-cd StanfordQuadruped sudo bash install.sh
+cd StanfordQuadruped
+sudo bash install.sh
 
-////
 
-pi@raspberrypi:~/pupper/StanfordQuadruped $ sudo ln -s $(realpath .)/robot.service /etc/systemd/system/ ln: failed to create symbolic link '/etc/systemd/system/robot.service': File exists
+////ln: failed to create symbolic link '/lib/systemd/system/joystick.service': File exists
+
+pi@raspberrypi:~/pupper/StanfordQuadruped $ sudo ln -s $(realpath .)/robot.service /etc/systemd/system/ 
+ln: failed to create symbolic link '/etc/systemd/system/robot.service': File exists
 
 pi@raspberrypi:~/pupper/StanfordQuadruped $ sudo ln -sf $(realpath .)/robot.service /etc/systemd/system/
 
