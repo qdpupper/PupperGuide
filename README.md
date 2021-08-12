@@ -52,9 +52,6 @@ pi@192.168.1.26's password: raspberry
 
 sudo apt-get update
 
-### 升级软件软件包
-
-sudo apt-get upgrade
 
 ### 安装python pip/pip3
 
