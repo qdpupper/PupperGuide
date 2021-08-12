@@ -42,9 +42,13 @@ https://packaging.python.org/guides/installing-using-linux-tools/#installing-pip
 
 Python 2:
 
-sudo apt install python-pip Python 3:
+sudo apt install python-pip
+
+Python 3:
 
 sudo apt install python3-venv python3-pip
+
+git:
 
 sudo apt install git
 
