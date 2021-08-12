@@ -16,15 +16,15 @@ Ubuntu（x86） https://downloads.raspberrypi.org/imager/imager_latest_amd64.deb
 
 在树莓派SD卡的根目录里放置一个名为ssh的文件，不要文件扩展名，文件无需任何内容
 
-### 查看树莓派局域网IP地址
+## 查看树莓派局域网IP地址
 
-## 方法一：用电脑登录网关查
+### 方法一：用电脑登录网关查
 
 http://192.168.1.1
 
 （例如查到有线连接设备IP: 192.168.1.26）
 
-## 方法二：局域网内电脑终端命令查看
+### 方法二：局域网内电脑终端命令查看
 
 https://www.raspberrypi.org/documentation/remote-access/ip-address.md
 
