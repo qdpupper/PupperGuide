@@ -1,18 +1,19 @@
 # PupperGuide
 
-烧录树莓派操作系统
+### 烧录树莓派操作系统
 
 设置SSH https://www.raspberrypi.org/documentation/remote-access/ssh/README.md
 
 在树莓派SD卡的分区里放置一个名为ssh的文件，没有文件扩展名，文件无需任何内容
 
-查看树莓派局域网IP地址 方法一：用电脑登录网关查
+### 查看树莓派局域网IP地址 
+## 方法一：用电脑登录网关查
 
 http://192.168.1.1
 
 （例如查到有线连接设备IP: 192.168.1.26）
 
-方法二：局域网内电脑终端命令查看
+## 方法二：局域网内电脑终端命令查看
 
 https://www.raspberrypi.org/documentation/remote-access/ip-address.md
 
@@ -28,7 +29,7 @@ PING raspberrypi.local (192.168.1.26): 56 data bytes
 
 64 bytes from 192.168.1.26: icmp_seq=3 ttl=64 time=5.249 ms
 
-在电脑终端登录树莓派
+### 在电脑终端登录树莓派
 
 ssh pi@
 
@@ -40,15 +41,15 @@ pi@192.168.1.26's password: raspberry
 sudo apt-get update
 
 
-安装python pip/pip3
+### 安装python pip/pip3
 
 https://packaging.python.org/guides/installing-using-linux-tools/#installing-pip-setuptools-wheel-with-linux-package-managers
 
-Python 2:
+## Python 2:
 
 sudo apt install python-pip
 
-Python 3:
+## Python 3:
 
 #sudo apt install python3-venv python3-pip
 sudo apt install python3-pip
@@ -57,14 +58,28 @@ git:
 
 sudo apt install git
 
-安装
+## 安装 pigpio (pigpiod)
+wget https://github.com/joan2937/pigpio/archive/refs/tags/v79.zip
+unzip v79.zip
+cd pigpio-79
+make
+sudo make install
+cd ..
+
+## 安装robot
 
 git clone https://github.com/qdpupper/StanfordQuadruped.git
 
 cd StanfordQuadruped
 sudo bash install.sh
 
+##
+sudo systemctl status roobt
+sudo systemctl status joystick
 
+### 完成
+
+### 
 ////ln: failed to create symbolic link '/lib/systemd/system/joystick.service': File exists
 
 pi@raspberrypi:~/pupper/StanfordQuadruped $ sudo ln -s $(realpath .)/robot.service /etc/systemd/system/ 
