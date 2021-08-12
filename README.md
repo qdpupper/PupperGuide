@@ -66,6 +66,7 @@ sudo apt install python-pip
 
 ## Python 3:
 （sudo apt install python3-venv python3-pip）
+
 sudo apt install python3-pip
 
 ## 安装git:
@@ -74,10 +75,15 @@ sudo apt install git
 
 ## 安装 pigpio (pigpiod)
 wget https://github.com/joan2937/pigpio/archive/refs/tags/v79.zip
+
 unzip v79.zip
+
 cd pigpio-79
+
 make
+
 sudo make install
+
 cd ..
 
 ## 安装robot (需要在pi用户目录下 cd ~)
