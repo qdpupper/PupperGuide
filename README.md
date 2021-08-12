@@ -3,16 +3,21 @@
 ### 烧录树莓派操作系统
 
 下载烧录软件 Raspberry Pi Imager  https://www.raspberrypi.org/software/
+
 苹果电脑 https://downloads.raspberrypi.org/imager/imager_latest.dmg
+
 Windows https://downloads.raspberrypi.org/imager/imager_latest.exe
+
 Ubuntu（x86） https://downloads.raspberrypi.org/imager/imager_latest_amd64.deb
+
 选择 Raspberry Pi OS
 
 ## 设置SSH https://www.raspberrypi.org/documentation/remote-access/ssh/README.md
 
 在树莓派SD卡的根目录里放置一个名为ssh的文件，不要文件扩展名，文件无需任何内容
 
-### 查看树莓派局域网IP地址 
+### 查看树莓派局域网IP地址
+
 ## 方法一：用电脑登录网关查
 
 http://192.168.1.1
@@ -43,9 +48,13 @@ ssh pi@192.168.1.26
 
 pi@192.168.1.26's password: raspberry
 
+### 更新软件包列表
 
 sudo apt-get update
 
+### 升级软件软件包
+
+sudo apt-get upgrade
 
 ### 安装python pip/pip3
 
@@ -56,11 +65,10 @@ https://packaging.python.org/guides/installing-using-linux-tools/#installing-pip
 sudo apt install python-pip
 
 ## Python 3:
-
-#sudo apt install python3-venv python3-pip
+（sudo apt install python3-venv python3-pip）
 sudo apt install python3-pip
 
-git:
+## 安装git:
 
 sudo apt install git
 
@@ -72,23 +80,26 @@ make
 sudo make install
 cd ..
 
-## 安装robot
-
+## 安装robot (需要在pi用户目录下 cd ~)
 git clone https://github.com/qdpupper/StanfordQuadruped.git
 
 cd StanfordQuadruped
+
 sudo bash install.sh
 
-##
+## 查看服务运行状态
+
 sudo systemctl status roobt
+
 sudo systemctl status joystick
 
 ### 完成
 
-### 
+### 由于github网络连接不稳定，没有安装成功的可以手动安装
 ////ln: failed to create symbolic link '/lib/systemd/system/joystick.service': File exists
 
-pi@raspberrypi:~/pupper/StanfordQuadruped $ sudo ln -s $(realpath .)/robot.service /etc/systemd/system/ 
+pi@raspberrypi:~/pupper/StanfordQuadruped $ sudo ln -s $(realpath .)/robot.service /etc/systemd/system/
+
 ln: failed to create symbolic link '/etc/systemd/system/robot.service': File exists
 
 pi@raspberrypi:~/pupper/StanfordQuadruped $ sudo ln -sf $(realpath .)/robot.service /etc/systemd/system/
