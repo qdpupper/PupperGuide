@@ -110,11 +110,8 @@ sudo bash install.sh
 cd ..
 
 #StanfordQuadruped
-cd StanfordQuadruped
 git clone https://github.com/qdpupper/StanfordQuadruped.git
-
 cd StanfordQuadruped
-
 sudo bash install.sh
 
 ```
