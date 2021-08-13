@@ -82,6 +82,47 @@ sudo make install
 cd ..
 
 ## 安装robot (需要在pi用户目录下 cd ~)
+
+
+
+cd ..
+
+# UDPComms
+'''
+git clone https://github.com/qdpupper/UDPComms.git
+cd UDPComms
+sudo bash install.sh
+cd ..
+'''
+
+# PS4Joystick
+#git clone https://github.com/stanfordroboticsclub/PS4Joystick.git
+git clone https://github.com/qdpupper/PS4Joystick.git
+cd PS4Joystick
+sudo bash install.sh
+cd ..
+
+# joystick.service
+#git clone https://github.com/stanfordroboticsclub/PupperCommand.git
+git clone https://github.com/qdpupper/PupperCommand.git
+cd PupperCommand
+sudo bash install.sh
+cd ..
+
+#sudo systemctl enable joystick
+
+#wget https://github.com/joan2937/pigpio/archive/v74.zip
+#unzip v74.zip
+#cd pigpio-74
+#make
+#sudo make install
+#cd ..
+
+cd StanfordQuadruped
+
+
+
+
 git clone https://github.com/qdpupper/StanfordQuadruped.git
 
 cd StanfordQuadruped
