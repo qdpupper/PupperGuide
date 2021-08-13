@@ -84,7 +84,7 @@ cd ..
 ## 安装robot (需要在pi用户目录下 cd ~)
 
 ```
-cd~
+cd ~
 
 # UDPComms
 git clone https://github.com/qdpupper/UDPComms.git
