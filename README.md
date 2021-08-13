@@ -113,12 +113,12 @@ cd ..
 git clone https://github.com/qdpupper/StanfordQuadruped.git
 cd StanfordQuadruped
 sudo bash install.sh
-
+cd ..
 ```
 
 ## 查看服务运行状态
 
-sudo systemctl status roobt
+sudo systemctl status robot
 
 sudo systemctl status joystick
 
