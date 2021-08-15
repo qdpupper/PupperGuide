@@ -134,6 +134,23 @@ ln: failed to create symbolic link '/etc/systemd/system/robot.service': File exi
 pi@raspberrypi:~/pupper/StanfordQuadruped $ sudo ln -sf $(realpath .)/robot.service /etc/systemd/system/
 
 
+#changes by Juedongli
+https://github.com/qdpupper/UDPComms/blob/master/UDPComms.py
 
+```
+
+    def send(self, obj):
+        """ Publish a message. The obj can be any nesting of standard python types """
+        msg = msgpack.dumps(obj, use_bin_type=False)
+        assert len(msg) < MAX_SIZE, "Encoded message too big!"
+        
+        #self.sock.send(msg)
+        #changed by Juedongli
+        try:
+            self.sock.send(msg)
+        except:
+            print("error: self.sock.send(msg) ConnectionRefusedError")
+            
+```
 
 
