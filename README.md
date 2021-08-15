@@ -139,6 +139,12 @@ https://github.com/qdpupper/UDPComms/blob/master/UDPComms.py
 
 ```
 
+##changed by Juedongli
+DEFAULT_IP = "127.0.0.1"
+
+
+###
+
     def send(self, obj):
         """ Publish a message. The obj can be any nesting of standard python types """
         msg = msgpack.dumps(obj, use_bin_type=False)
